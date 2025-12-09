@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobHunt | Find Your Dream Job</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span>Worklyn</span>
+        </div>
+        <div class="nav-links">
+            <a href="#jobs-section" class="active">Find Jobs</a>
+            <a href="#categories-section">Companies</a>
+            <a href="#">Salaries</a>
+            <a href="#">Login</a>
+            <a href="#" class="btn-primary">Post your resume</a>
+        </div>
+        <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Find Your <span class="gradient-text">Dream Job</span> Today</h1>
+            <p>Connect with top startups and tech giants. Your future starts here.</p>
+
+            <div class="search-container">
+                <div class="input-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="job-title" placeholder="Job title or keyword">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="job-location" placeholder="City or remote">
+                </div>
+                <button id="search-btn" class="btn-search">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="categories-section" id="categories-section">
+        <div class="container">
+            <h2>Trending Startups Hiring Now</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="engineering">
+                    <div class="icon-box"><img
+                            src="https://styles.redditmedia.com/t5_2s4v6/styles/communityIcon_5bm7k02yw1ma1.jpg?width=128&frame=1&auto=webp&s=3498cbb5fea601548234b19a07deb31a806f5770">
+                    </div>
+                    <h3>Reddit</h3>
+                    <p class="job-positions">Marketing, Sales, Hr</p>
+                    <p>32 Job openings</p>
+                </div>
+                <div class="category-card" data-category="design">
+                    <div class="icon-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwDiicpDsawpNveT7Ota2-EC_vZbP8vneTbg&s"></div>
+                    <h3>Spotify</h3>
+                    <p class="job-positions">AI, Machine learning, Marketing</p>
+                    <p>10+ Job openings</p>
+                </div>
+                <div class="category-card" data-category="data">
+                    <div class="icon-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMT_GzAgN4C-41Y9g-0n1iyY0nCzqp_HKdpA&s"></div>
+                    <h3>Zepto</h3>
+                    <p class="job-positions">Delivery Executives, Manager</p>
+                    <p>20+ Job openings</p>
+                </div>
+                <div class="category-card" data-category="marketing">
+                    <div class="icon-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSicMDzk5BVKCMaspR4wow1fC8Kt9fDI-ACBg&s"></div>
+                    <h3>Airbnb</h3>
+                    <p class="job-positions">Analyst, Data scientist, HR </p>
+                    <p>15 Job openings</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jobs-section" id="jobs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Startups Hiring</h2>
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="all">All</button>
+                    <button class="tab-btn" data-tab="engineering">Engineering</button>
+                    <button class="tab-btn" data-tab="design">Design</button>
+                    <button class="tab-btn" data-tab="data">Data</button>
+                </div>
+            </div>
+
+            <div id="jobs-container" class="jobs-grid">
+                <!-- Job cards will be injected here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="logo">Job<span class="highlight">Hunt</span></div>
+                <p>The best place to find your next career move.</p>
+            </div>
+            <div class="footer-col">
+                <h4>For Candidates</h4>
+                <a href="#">Browse Jobs</a>
+                <a href="#">Browse Categories</a>
+                <a href="#">Career Advice</a>
+            </div>
+            <div class="footer-col">
+                <h4>For Employers</h4>
+                <a href="#">Post a Job</a>
+                <a href="#">Pricing</a>
+                <a href="#">Hiring Solutions</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 JobHunt. All rights reserved.</p>
+        </div>
+    </footer> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
