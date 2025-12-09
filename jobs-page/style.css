@@ -1,11 +1,11 @@
 :root {
     /* Neon Black Theme */
-    --primary: #00f0ff;
+    --primary:rgb(17, 121, 174);
     /* Electric Blue */
-    --primary-dark: #00bcd4;
-    --secondary: #d946ef;
+    --primary-dark:rgb(17, 121, 174);
+    --secondary: rgb(17, 121, 174);
     /* Neon Pink */
-    --accent: #8b5cf6;
+    --accent: rgb(17, 121, 174);
     /* Purple */
 
     --dark-bg: #000000;
@@ -14,13 +14,13 @@
     --text-muted: #a1a1aa;
     --border-color: #27272a;
 
-    --gradient-main: linear-gradient(135deg, #00f0ff 0%, #8b5cf6 50%, #ff00ff 100%);
-    --gradient-hover: linear-gradient(135deg, #ff00ff 0%, #8b5cf6 50%, #00f0ff 100%);
+    --gradient-main: linear-gradient(135deg, #00f0ff 0%, rgb(17, 121, 174) 50%, rgb(17, 121, 174)100%);
+    --gradient-hover: linear-gradient(135deg, rgb(17, 121, 174) 0%, rgb(17, 121, 174) 50%, #00f0ff 100%);
 
     /* Layout */
     --container-width: 1200px;
     --radius: 12px;
-    --shadow: 0 0 20px rgba(139, 92, 246, 0.15);
+    --shadow: 0 0 20px rgb(17, 121, 174);
     /* Purple glow */
 }
 
@@ -53,7 +53,7 @@ ul {
     padding: 0 20px;
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -74,7 +74,7 @@ ul {
 }
 
 .logo span {
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #a855f7 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, rgb(17, 121, 174) 50%, rgb(17, 121, 174) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -85,10 +85,6 @@ ul {
     display: flex;
     gap: 32px;
     align-items: center;
-}
-
-.nav-links a:hover {
-    color: var(--primary);
 }
 
 .nav-links a.active {
@@ -116,7 +112,7 @@ ul {
 }
 
 .btn-primary:hover,
-.btn-search:hover {
+ .btn-search:hover {
     background: var(--primary-dark);
     transform: translateY(-1px);
 }
@@ -125,9 +121,9 @@ ul {
     display: none;
     font-size: 24px;
     cursor: pointer;
-}
+} 
 
-/* Hero Section */
+
 .hero {
     padding: 100px 20px;
     text-align: center;
@@ -318,7 +314,7 @@ ul {
     background: var(--gradient-main);
     color: white;
     border-color: transparent;
-    box-shadow: 0 0 15px rgba(217, 70, 239, 0.4);
+    box-shadow: 0 0 15px rgb(17, 121, 174);
 }
 
 .jobs-grid {
@@ -335,11 +331,12 @@ ul {
     transition: all 0.3s;
     display: flex;
     flex-direction: column;
+    
 }
 
 .job-card:hover {
     border-color: var(--secondary);
-    box-shadow: 0 0 20px rgba(217, 70, 239, 0.15);
+    box-shadow: 0 0 20px rgb(17, 121, 174);
     transform: translateY(-5px);
 }
 
@@ -366,7 +363,7 @@ ul {
 .time-badge {
     color: var(--text-muted);
     font-size: 0.85rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgb(17, 121, 174);
     padding: 4px 10px;
     border-radius: 20px;
 }
@@ -393,18 +390,9 @@ ul {
     font-size: 0.8rem;
     padding: 4px 12px;
     border-radius: 6px;
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--primary);
+    background: rgb(17, 121, 174);
+    color: white;
     border: 1px solid rgba(0, 240, 255, 0.2);
-}
-
-.job-footer {
-    margin-top: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    border-top: 1px solid var(--border-color);
 }
 
 .salary {
@@ -427,55 +415,9 @@ ul {
     opacity: 0.8;
 }
 
-/* Footer */
-footer {
-    background: #050505;
-    padding: 60px 0 20px;
-    border-top: 1px solid var(--border-color);
-    margin-top: auto;
-}
 
-.footer-content {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 40px;
-}
 
-.footer-col h4 {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-}
 
-.footer-col a {
-    display: block;
-    color: var(--text-muted);
-    margin-bottom: 12px;
-    font-size: 0.95rem;
-}
-
-.footer-col a:hover {
-    color: var(--primary);
-}
-
-.social-links {
-    display: flex;
-    gap: 16px;
-}
-
-.social-links a {
-    font-size: 1.2rem;
-}
-
-.footer-bottom {
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-/* Responsive */
 @media (max-width: 768px) {
     .navbar {
         padding: 20px;
