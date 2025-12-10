@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
+<div class ="loginBox">
+    <div class="container_login">
+        <div class="logo_login">
             <h1>WORKLYN</h1>
         </div>
 
-        <div class="tabs">
+        <div class="tabs_login">
             <button class="tab active" id="loginTab">Login</button>
             <button class="tab" id="signupTab">Sign Up</button>
         </div>
@@ -22,11 +23,11 @@
        
         <div id="loginForm" class="form-container active">
             <form id="loginFormElement">
-                <div class="input-group">
+                <div class="input-group-login">
                     <label for="loginEmail">Email</label>
                     <input type="email" id="loginEmail" placeholder="Enter your email" required>
                 </div>
-                <div class="input-group">
+                <div class="input-group-login">
                     <label for="loginPassword">Password</label>
                     <input type="password" id="loginPassword" placeholder="Enter your password" required>
                 </div>
@@ -40,19 +41,19 @@
         
         <div id="signupForm" class="form-container">
             <form id="signupFormElement">
-                <div class="input-group">
+                <div class="input-group-login">
                     <label for="signupName">Full Name</label>
                     <input type="text" id="signupName" placeholder="Enter your full name" required>
                 </div>
-                <div class="input-group">
+                <div class="input-group-login">
                     <label for="signupEmail">Email</label>
                     <input type="email" id="signupEmail" placeholder="Enter your email" required>
                 </div>
-                <div class="input-group">
+                <div class="input-group-login">
                     <label for="signupPassword">Password</label>
                     <input type="password" id="signupPassword" placeholder="Create a password" required>
                 </div>
-                <div class="input-group">
+                <div class="input-group-login">
                     <label for="signupConfirmPassword">Confirm Password</label>
                     <input type="password" id="signupConfirmPassword" placeholder="Confirm your password" required>
                 </div>
@@ -60,6 +61,7 @@
             </form>
         </div>
     </div>
+</div>
 
     <script src="script.js"></script>
         
