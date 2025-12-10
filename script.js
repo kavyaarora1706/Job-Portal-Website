@@ -1,60 +1,60 @@
-const loginTab = document.getElementById('loginTab');
-const signupTab = document.getElementById('signupTab');
-const loginForm = document.getElementById('loginForm');
-const signupForm = document.getElementById('signupForm');
-const messageDiv = document.getElementById('message');
-function showMessage(text, type) {
-    messageDiv.textContent = text;
-    messageDiv.className = `message ${type}`;
-    messageDiv.style.display = 'block';
-    setTimeout(() => {
-        messageDiv.style.display = 'none';
-    }, 3000);
-}
+// const loginTab = document.getElementById('loginTab');
+// const signupTab = document.getElementById('signupTab');
+// const loginForm = document.getElementById('loginForm');
+// const signupForm = document.getElementById('signupForm');
+// const messageDiv = document.getElementById('message');
+// function showMessage(text, type) {
+//     messageDiv.textContent = text;
+//     messageDiv.className = `message ${type}`;
+//     messageDiv.style.display = 'block';
+//     setTimeout(() => {
+//         messageDiv.style.display = 'none';
+//     }, 3000);
+// }
 
-loginTab.addEventListener('click', () => {
-    loginTab.classList.add('active');
-    signupTab.classList.remove('active');
-    loginForm.classList.add('active');
-    signupForm.classList.remove('active');
-});
+// loginTab.addEventListener('click', () => {
+//     loginTab.classList.add('active');
+//     signupTab.classList.remove('active');
+//     loginForm.classList.add('active');
+//     signupForm.classList.remove('active');
+// });
 
-signupTab.addEventListener('click', () => {
-    signupTab.classList.add('active');
-    loginTab.classList.remove('active');
-    signupForm.classList.add('active');
-    loginForm.classList.remove('active');
-});
+// signupTab.addEventListener('click', () => {
+//     signupTab.classList.add('active');
+//     loginTab.classList.remove('active');
+//     signupForm.classList.add('active');
+//     loginForm.classList.remove('active');
+// });
 
-document.getElementById('loginFormElement').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const email = document.getElementById('loginEmail').value;
-    const password = document.getElementById('loginPassword').value;
-    if (email && password) {
-        showMessage('Login successful! Redirecting...', 'success');
-        setTimeout(() => {
-            console.log('Login:', { email, password });
-        }, 1000);
-    }
-});
-document.getElementById('signupFormElement').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.getElementById('signupName').value;
-    const email = document.getElementById('signupEmail').value;
-    const password = document.getElementById('signupPassword').value;
-    const confirmPassword = document.getElementById('signupConfirmPassword').value;
-    if (password !== confirmPassword) {
-        showMessage('Passwords do not match!', 'error');
-        return;
-    }
-    if (name && email && password) {
-        showMessage('Account created successfully!', 'success');
-         setTimeout(() => {
-            console.log('Signup:', { name, email, password });
-            loginTab.click();
-        }, 1500);
-    }
-});
+// document.getElementById('loginFormElement').addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     const email = document.getElementById('loginEmail').value;
+//     const password = document.getElementById('loginPassword').value;
+//     if (email && password) {
+//         showMessage('Login successful! Redirecting...', 'success');
+//         setTimeout(() => {
+//             console.log('Login:', { email, password });
+//         }, 1000);
+//     }
+// });
+// document.getElementById('signupFormElement').addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     const name = document.getElementById('signupName').value;
+//     const email = document.getElementById('signupEmail').value;
+//     const password = document.getElementById('signupPassword').value;
+//     const confirmPassword = document.getElementById('signupConfirmPassword').value;
+//     if (password !== confirmPassword) {
+//         showMessage('Passwords do not match!', 'error');
+//         return;
+//     }
+//     if (name && email && password) {
+//         showMessage('Account created successfully!', 'success');
+//          setTimeout(() => {
+//             console.log('Signup:', { name, email, password });
+//             loginTab.click();
+//         }, 1500);
+//     }
+// });
 // Mock Job Data
 const jobs = [
     {
@@ -64,7 +64,7 @@ const jobs = [
         location: "Remote",
         type: "Full Time",
         category: "engineering",
-        salary: "$120k - $150k",
+        salary: "Rs12,000 - 15,000",
         posted: "2 days ago",
         tags: ["React", "Next.js", "TypeScript"],
         logo: "V"
@@ -73,10 +73,10 @@ const jobs = [
         id: 2,
         title: "Product Designer",
         company: "Airbnb",
-        location: "San Francisco, CA",
+        location: "Chandigarh, India",
         type: "Full Time",
         category: "design",
-        salary: "$140k - $160k",
+        salary: "Rs10,000 - 13,000",
         posted: "5 hours ago",
         tags: ["Figma", "UI/UX", "Prototyping"],
         logo: "A"
@@ -85,10 +85,10 @@ const jobs = [
         id: 3,
         title: "Data Scientist",
         company: "Spotify",
-        location: "New York, NY",
+        location: "Bangalore, India",
         type: "Full Time",
         category: "data",
-        salary: "$130k - $170k",
+        salary: "Rs30,000 - 40,000",
         posted: "1 day ago",
         tags: ["Python", "Machine Learning", "SQL"],
         logo: "S"
@@ -99,8 +99,8 @@ const jobs = [
         company: "Stripe",
         location: "Remote",
         type: "Contract",
-        category: "engineering",
-        salary: "$110k - $140k",
+        category: "Engineering",
+        salary: "Rs20,000 - 25,000",
         posted: "3 days ago",
         tags: ["Go", "AWS", "API Design"],
         logo: "S"
@@ -109,10 +109,10 @@ const jobs = [
         id: 5,
         title: "Marketing Manager",
         company: "Discord",
-        location: "London, UK",
+        location: "Maharashtra,Pune",
         type: "Full Time",
         category: "marketing",
-        salary: "$90k - $110k",
+        salary: "Rs15,000 - 18,000",
         posted: "1 week ago",
         tags: ["Strategy", "SEO", "Growth"],
         logo: "L"
@@ -124,7 +124,7 @@ const jobs = [
         location: "Remote",
         type: "Part Time",
         category: "design",
-        salary: "$60/hr",
+        salary: "Rs800/hour",
         posted: "4 hours ago",
         tags: ["User Testing", "Interviewing"],
         logo: "N"
@@ -226,4 +226,61 @@ categoryCards.forEach(card => {
         // Scroll to jobs
         document.querySelector('.jobs-section').scrollIntoView({ behavior: 'smooth' });
     });
+});
+const loginTab = document.getElementById('loginTab');
+const signupTab = document.getElementById('signupTab');
+const loginForm = document.getElementById('loginForm');
+const signupForm = document.getElementById('signupForm');
+const messageDiv = document.getElementById('message');
+function showMessage(text, type) {
+    messageDiv.textContent = text;
+    messageDiv.className = `message ${type}`;
+    messageDiv.style.display = 'block';
+    setTimeout(() => {
+        messageDiv.style.display = 'none';
+    }, 3000);
+}
+
+loginTab.addEventListener('click', () => {
+    loginTab.classList.add('active');
+    signupTab.classList.remove('active');
+    loginForm.classList.add('active');
+    signupForm.classList.remove('active');
+});
+
+signupTab.addEventListener('click', () => {
+    signupTab.classList.add('active');
+    loginTab.classList.remove('active');
+    signupForm.classList.add('active');
+    loginForm.classList.remove('active');
+});
+
+document.getElementById('loginFormElement').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
+    if (email && password) {
+        showMessage('Login successful! Redirecting...', 'success');
+        setTimeout(() => {
+            console.log('Login:', { email, password });
+        }, 1000);
+    }
+});
+document.getElementById('signupFormElement').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('signupName').value;
+    const email = document.getElementById('signupEmail').value;
+    const password = document.getElementById('signupPassword').value;
+    const confirmPassword = document.getElementById('signupConfirmPassword').value;
+    if (password !== confirmPassword) {
+        showMessage('Passwords do not match!', 'error');
+        return;
+    }
+    if (name && email && password) {
+        showMessage('Account created successfully!', 'success');
+         setTimeout(() => {
+            console.log('Signup:', { name, email, password });
+            loginTab.click();
+        }, 1500);
+    }
 });

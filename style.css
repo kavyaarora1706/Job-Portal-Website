@@ -17,7 +17,6 @@
 .container_login {
     background: #000000;
     border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3);
     padding: 60px;
     width: 100%;
     max-width: 450px;
@@ -348,8 +347,8 @@ ul {
     text-align: center;
     background: #000000;
     background-image:
-        radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.2) 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(0, 240, 255, 0.15) 0%, transparent 40%);
+        radial-gradient(circle at 10% 20%, rgba(47, 74, 143, 0.2) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(47, 74, 143, 0.2) 0%, transparent 40%);
 }
 
 .hero h1 {
@@ -378,7 +377,6 @@ ul {
     border-radius: 16px;
     display: inline-flex;
     gap: 10px;
-    box-shadow: var(--shadow);
     border: 1px solid var(--border-color);
     flex-wrap: wrap;
     max-width: 800px;
@@ -671,3 +669,53 @@ ul {
         justify-content: center;
     }
 }
+footer {
+    background: #050505;
+    padding: 60px 0 20px;
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+
+}
+.logo{
+    color:rgb(17, 121, 174);
+}
+
+.footer-col h4 {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.footer-col a {
+    display: block;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.footer-col a:hover {
+    color: var(--primary);
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.social-links a {
+    font-size: 1.2rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);}
+
