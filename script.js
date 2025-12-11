@@ -74,7 +74,7 @@ const jobs = [
     }
 ];
 
-// DOM Elements
+
 const jobsContainer = document.getElementById('jobs-container');
 const searchBtn = document.getElementById('search-btn');
 const titleInput = document.getElementById('job-title');
@@ -82,10 +82,10 @@ const locationInput = document.getElementById('job-location');
 const tabBtns = document.querySelectorAll('.tab-btn');
 const categoryCards = document.querySelectorAll('.category-card');
 
-// Initial Render
+
 renderJobs(jobs);
 
-// Functions
+
 function renderJobs(jobsData) {
     jobsContainer.innerHTML = '';
 
@@ -130,13 +130,13 @@ function filterJobs(category, searchTerm, locationTerm) {
     renderJobs(filtered);
 }
 
-// Event Listeners
+
 searchBtn.addEventListener('click', () => {
     const activeTab = document.querySelector('.tab-btn.active').dataset.tab;
     filterJobs(activeTab, titleInput.value, locationInput.value);
 });
 
-// Allow Enter key to trigger search
+
 titleInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') searchBtn.click();
 });
@@ -145,28 +145,28 @@ locationInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') searchBtn.click();
 });
 
-// Category Tabs
+
 tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-        // Update Active State
+        
         tabBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
 
-        // Filter
+        
         const category = btn.dataset.tab;
         filterJobs(category, titleInput.value, locationInput.value);
     });
 });
 
-// Category Cards (Clicking one scrolls to jobs and filters)
+
 categoryCards.forEach(card => {
     card.addEventListener('click', () => {
         const category = card.dataset.category;
 
-        // Find corresponding tab and click it
+       
         document.querySelector(`.tab-btn[data-tab="${category}"]`).click();
 
-        // Scroll to jobs
+        
         document.querySelector('.jobs-section').scrollIntoView({ behavior: 'smooth' });
     });
 });

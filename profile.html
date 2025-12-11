@@ -164,7 +164,7 @@
             }
         });
 
-        // Update display name and title
+       
         document.getElementById('fullName').addEventListener('input', function() {
             document.getElementById('displayName').textContent = this.value || 'John Doe';
         });
@@ -173,7 +173,7 @@
             document.getElementById('displayTitle').textContent = this.value || 'Software Engineer';
         });
 
-        // Add skill
+        
         function addSkill() {
             const input = document.getElementById('skillInput');
             const skill = input.value.trim();
@@ -191,7 +191,7 @@
             }
         }
 
-        // Allow enter key to add skill
+        
         document.getElementById('skillInput').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 e.preventDefault();
@@ -199,7 +199,7 @@
             }
         });
 
-        // Resume upload
+        
         document.getElementById('resumeInput').addEventListener('change', function(e) {
             const file = e.target.files[0];
             if (file) {
@@ -222,15 +222,15 @@
             document.getElementById('resumeUpload').style.display = 'block';
         }
 
-        // Save profile
+        
         function saveProfile() {
             const successMessage = document.getElementById('successMessage');
             successMessage.classList.add('show');
             
-            // Scroll to top
+            
             window.scrollTo({ top: 0, behavior: 'smooth' });
             
-            // Hide message after 3 seconds
+            
             setTimeout(() => {
                 successMessage.classList.remove('show');
             }, 3000);
