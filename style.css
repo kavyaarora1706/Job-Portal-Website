@@ -349,8 +349,8 @@ ul {
     text-align: center;
     background: #000000;
     background-image:
-        radial-gradient(circle at 10% 20%, rgba(47, 74, 143, 0.2) 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(47, 74, 143, 0.2) 0%, transparent 40%);
+        radial-gradient(circle at 10% 20%, rgba(27, 50, 106, 0.2) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(27, 50, 106, 0.2) 0%, transparent 40%);
 }
 
 .hero h1 {

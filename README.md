@@ -1,6 +1,6 @@
 # Worklyn
 
-**Get the future you deserve** - A modern job portal connecting talented professionals with top startups and tech giants.
+A modern job portal connecting talented professionals with top startups and tech giants.
 
 ## Overview
 
@@ -85,8 +85,8 @@ worklyn/
 ├── login.html         # Authentication page
 ├── profile.html       # User profile page
 ├── style.css          # Main stylesheet
-├── script.js          #JavaScript functionality
-├── login.js           #JavaScript functionality
+├── script.js          # JavaScript functionality
+├── login.js           # JavaScript functionality
 
 ```
 
